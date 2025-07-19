@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Public Notary | Houston's Mobile Notary</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons for modern, clean icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Applying the Inter font to the whole page */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for elements on load */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Announcement Bar -->
+    <div class="bg-gray-800 text-white text-center p-3 text-sm font-medium">
+        ✨ Reliable & Professional Notary Services in Houston ✨
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+
+        <!-- Header / Hero Section -->
+        <header class="text-center my-12 md:my-20 fade-in">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                Texas Public Notary
+            </h1>
+            <p class="mt-2 text-2xl md:text-3xl text-amber-600 font-semibold">
+                Houston’s Mobile Notary
+            </p>
+            <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Convenient, professional, and reliable mobile notary services with flexible monthly plans. We come to you, saving you time and hassle.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#pricing" class="bg-amber-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-amber-600 transition-transform transform hover:scale-105">
+                    View Subscription Plans
+                </a>
+            </div>
+        </header>
+
+        <!-- Custom SVG Graphic Section -->
+        <section class="my-16 fade-in" style="animation-delay: 0.2s;">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden p-8 border-4 border-white">
+                <svg viewBox="0 0 200 100" class="w-full h-auto">
+                    <!-- Background -->
+                    <rect width="200" height="100" rx="5" fill="#f9fafb"/>
+                    
+                    <!-- Document Paper -->
+                    <rect x="30" y="10" width="140" height="80" rx="3" fill="#ffffff" stroke="#e5e7eb" stroke-width="0.5"/>
+                    <path d="M 40 25 H 160 M 40 35 H 160 M 40 45 H 120" stroke="#d1d5db" stroke-width="0.5" />
+
+                    <!-- Fountain Pen -->
+                    <g transform="rotate(10 140 70)">
+                        <rect x="120" y="65" width="40" height="5" rx="2.5" fill="#1f2937"/>
+                        <polygon points="160,67.5 165,67.5 160,65" fill="#d1d5db"/>
+                        <polygon points="160,67.5 165,67.5 160,70" fill="#e5e7eb"/>
+                    </g>
+
+                    <!-- Wax Seal -->
+                    <circle cx="150" cy="75" r="12" fill="#c2410c"/>
+                    <circle cx="150" cy="75" r="10" fill="#ea580c"/>
+                    <text x="150" y="78" font-family="serif" font-size="8" fill="#fde68a" text-anchor="middle" font-weight="bold">★</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="my-20 fade-in" style="animation-delay: 0.4s;">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Monthly Subscription Plans</h2>
+            <p class="text-center text-gray-600 mb-12">Choose the perfect plan for your needs.</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Starter Plan -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 h-full flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">$49<span class="text-xl font-semibold text-gray-500">.95/mo</span></p>
+                    <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>5 notarizations per month</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>2 included mobile visit (10 mi radius from 77080)</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>10% discount on extras</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Trip fee for additional visits only $14.99 within 10 miles from 77080</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Rollover 1 unused notarization</span></li>
+                    </ul>
+                    <a href="https://square.link/u/8Wa9oMck" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-amber-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-amber-600 transition-colors mt-auto">
+                        Choose This Plan
+                    </a>
+                </div>
+
+                <!-- Pro Plan (Highlighted) -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-2 border-amber-500 relative h-full flex flex-col">
+                    <span class="bg-amber-500 text-white text-xs font-bold uppercase px-3 py-1 rounded-full absolute -top-4 right-6">Most Popular</span>
+                    <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">$119<span class="text-xl font-semibold text-gray-500">.95/mo</span></p>
+                    <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Up to 10 notarizations/month</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>3 mobile visits (15 mi radius from 77080)</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Priority scheduling</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>20% discount on extras</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Trip fee for additional visits only $14.99 within 10 mile radius from 77080</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Rollover 1 unused home/office visit</span></li>
+                    </ul>
+                    <a href="https://square.link/u/7TKNr9Ud" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-amber-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-amber-600 transition-colors mt-auto">
+                        Choose This Plan
+                    </a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 h-full flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">Customized</p>
+                    <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>25+ notarizations/month</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>6+ mobile visits (15 mi radius from 77080)</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>Phone/Email support for general notarization questions</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>After hours/weekend access</span></li>
+                        <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"></i><span>All travel fees included</span></li>
+                    </ul>
+                    <a href="https://form.jotform.com/251995515482164" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors mt-auto">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="my-20 bg-gray-800 text-white rounded-2xl p-8 md:p-12 fade-in" style="animation-delay: 0.6s;">
+            <div class="text-center max-w-2xl mx-auto">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Happy customer photo" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-gray-600" onerror="this.onerror=null;this.src='https://placehold.co/100x100/cccccc/ffffff?text=Client';">
+                <p class="text-xl md:text-2xl italic font-light">"The mobile notary service is a game-changer. Professional, punctual, and incredibly convenient. The Pro plan is perfect for our small business needs."</p>
+                <p class="mt-4 font-bold text-amber-400">- J. Rodriguez, Small Business Owner</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center p-6">
+        <p>&copy; 2024 Texas Public Notary. All Rights Reserved.</p>
+        <p class="text-sm">texaspublicnotary.us</p>
+        <div class="mt-2 text-sm">
+            <a href="#" class="hover:text-white mx-2">Privacy Policy</a> | 
+            <a href="#" class="hover:text-white mx-2">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // This script initializes the Lucide icons.
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
